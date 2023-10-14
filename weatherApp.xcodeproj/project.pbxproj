@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261415BD2ADB581E00D2DCEB /* weatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261415BC2ADB581E00D2DCEB /* weatherData.swift */; };
 		26EF5C042ADB4955002FEEFA /* weatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5C032ADB4955002FEEFA /* weatherAppApp.swift */; };
 		26EF5C062ADB4955002FEEFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5C052ADB4955002FEEFA /* ContentView.swift */; };
 		26EF5C082ADB4956002FEEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5C072ADB4956002FEEFA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261415BC2ADB581E00D2DCEB /* weatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherData.swift; sourceTree = "<group>"; };
 		26EF5C002ADB4955002FEEFA /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EF5C032ADB4955002FEEFA /* weatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherAppApp.swift; sourceTree = "<group>"; };
 		26EF5C052ADB4955002FEEFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261415BB2ADB57F900D2DCEB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				261415BC2ADB581E00D2DCEB /* weatherData.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		26EF5BF72ADB4955002FEEFA = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		26EF5C022ADB4955002FEEFA /* weatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				261415BB2ADB57F900D2DCEB /* Managers */,
 				26EF5C032ADB4955002FEEFA /* weatherAppApp.swift */,
 				26EF5C052ADB4955002FEEFA /* ContentView.swift */,
 				26EF5C072ADB4956002FEEFA /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				26EF5C062ADB4955002FEEFA /* ContentView.swift in Sources */,
 				26EF5C042ADB4955002FEEFA /* weatherAppApp.swift in Sources */,
+				261415BD2ADB581E00D2DCEB /* weatherData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
