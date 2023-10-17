@@ -7,6 +7,8 @@ class WeatherNetworkManager: ObservableObject { // Conform to ObservableObject
     
     @Published var weatherData: WeatherData? // Add @Published to properties that should trigger updates
     
+    
+    
     struct WeatherData: Codable {
         var location: Location
         var current: CurrentWeather
@@ -35,6 +37,8 @@ class WeatherNetworkManager: ObservableObject { // Conform to ObservableObject
                     do {
                         let decoder = JSONDecoder()
                         let decodedData = try decoder.decode(WeatherData.self, from: data)
+                        
+                        print(decodedData)
                         
                         // Update the @Published property to trigger view updates
                         DispatchQueue.main.async {

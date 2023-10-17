@@ -12,6 +12,15 @@ struct ContentView: View {
     @ObservedObject var weatherManager = WeatherNetworkManager.shared
     @State private var city: String = "Berlin"
     
+    var temperature: Int {
+        if let weatherData = weatherManager.weatherData {
+            return Int(weatherData.current.temp_c)
+        } else {
+            return 0
+        }
+    }
+
+    
     //Body
     var body: some View {
         VStack {
@@ -33,10 +42,9 @@ struct ContentView: View {
             .foregroundColor(.black)
             
             if let weatherData = weatherManager.weatherData {
-                Text("City: \(weatherData.location.name)")
-                Text("Region: \(weatherData.location.region)")
-                Text("Country: \(weatherData.location.country)")
-                Text("Temperature: \(weatherData.current.temp_c)°C")
+                Text("\(weatherData.location.name)")
+                Text("\(weatherData.location.country)")
+                Text("\(temperature)°C")
                 Text("Condition: \(weatherData.current.condition.text)")
             } else {
                 Text("Loading...")
